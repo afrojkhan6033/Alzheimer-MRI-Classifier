@@ -11,6 +11,10 @@
 [![Dataset](https://img.shields.io/badge/Dataset-Mendeley_Data-orange.svg)](https://data.mendeley.com/datasets/3r8hw8wmmk/1)
 [![Developer](https://img.shields.io/badge/Developer-Afroj_Khan-10b981.svg?logo=github&logoColor=white)](https://github.com/afrojkhan6033)
 
+[![GitHub Stars](https://img.shields.io/github/stars/afrojkhan6033/Alzheimer-MRI-Classifier?style=social)](https://github.com/afrojkhan6033/Alzheimer-MRI-Classifier/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/afrojkhan6033/Alzheimer-MRI-Classifier?style=social)](https://github.com/afrojkhan6033/Alzheimer-MRI-Classifier/network/members)
+[![GitHub Followers](https://img.shields.io/github/followers/afrojkhan6033?label=Follow%20%40afrojkhan6033&style=social)](https://github.com/afrojkhan6033)
+
 <p align="center">
   A clean, modern medical imaging web application for classifying Alzheimer's disease stages from brain MRI scans using independently trained <b>ResNet-50</b> and <b>VGG-16</b> models with <b>Grad-CAM visual heatmaps</b>.
 </p>
@@ -135,11 +139,40 @@ Alzheimer-MRI-Classifier/
 
 ---
 
+## 🌟 Support & Community
+
+If this project helps you, sparks an idea, or saves you development time, show your support:
+
+<div align="center">
+
+| ⭐️ **Star this Repo** | 👤 **Follow Developer** | 🍴 **Fork Project** |
+|:---:|:---:|:---:|
+| Leave a star if you find this project valuable! | Follow for more Deep Learning & AI healthcare tools | Feel free to fork and build upon this work |
+| [![Star](https://img.shields.io/badge/⭐️_Star_Repository-FFD700?style=for-the-badge&logo=github&logoColor=black)](https://github.com/afrojkhan6033/Alzheimer-MRI-Classifier/stargazers) | [![Follow](https://img.shields.io/badge/👤_Follow_Afroj-10B981?style=for-the-badge&logo=github&logoColor=white)](https://github.com/afrojkhan6033) | [![Fork](https://img.shields.io/badge/🍴_Fork_Repository-6366F1?style=for-the-badge&logo=github&logoColor=white)](https://github.com/afrojkhan6033/Alzheimer-MRI-Classifier/fork) |
+
+<br/>
+
+> 💡 **Contributions, feedback, and feature suggestions are always welcome!**  
+> Found a bug or have an idea? Open an **[Issue](https://github.com/afrojkhan6033/Alzheimer-MRI-Classifier/issues)** or submit a **[Pull Request](https://github.com/afrojkhan6033/Alzheimer-MRI-Classifier/pulls)**.
+
+</div>
+
+---
+
 ## 👨‍💻 Developer & Author
 
-**Afroj Khan**  
-* GitHub: [@afrojkhan6033](https://github.com/afrojkhan6033)  
-* Project Implementation: ResNet-50 and VGG-16 model training, data deduplication, Grad-CAM explainability engine, FastAPI backend, and React web interface.
+<div align="center">
+
+<img src="https://github.com/afrojkhan6033.png" width="90px" style="border-radius: 50%; border: 3px solid #10b981;" alt="Afroj Khan" />
+
+### **Afroj Khan**
+[![GitHub Profile](https://img.shields.io/badge/GitHub-afrojkhan6033-181717?style=flat&logo=github)](https://github.com/afrojkhan6033)
+[![Followers](https://img.shields.io/github/followers/afrojkhan6033?label=Follow%20Me&style=social)](https://github.com/afrojkhan6033)
+
+*Machine Learning & Full-Stack Developer*  
+*Independently implemented, trained, and integrated the ResNet-50 & VGG-16 neural pipelines, Grad-CAM interpretability engine, FastAPI backend, and React clinical interface.*
+
+</div>
 
 ---
 
