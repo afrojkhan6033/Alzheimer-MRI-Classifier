@@ -1,0 +1,61 @@
+# =============================================================================
+# Python Environments & Caches
+# =============================================================================
+.venv*/
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.whl
+*.egg-info/
+dist/
+build/
+
+# =============================================================================
+# Large Datasets
+# (Keep raw dataset local; provide sample_images/ for quick testing)
+# =============================================================================
+Alzheimer (Preprocessed Data)/
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# =============================================================================
+# Large Model Weights (>100MB cannot be pushed to GitHub)
+# Keep directory structure with .gitkeep
+# =============================================================================
+runs/**/*.pt
+*.pt
+*.pth
+*.bin
+*.onnx
+
+# Explicitly track calibration config & gitkeeps
+!runs/calibration.json
+!runs/**/.gitkeep
+
+# =============================================================================
+# Frontend Dependencies & Build Outputs
+# =============================================================================
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =============================================================================
+# IDE & System Files
+# =============================================================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+*.log
