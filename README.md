@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🧠 Alzheimer MRI Classifier
-### Dual-Model Deep Learning & Explainable AI (XAI) Platform
+### Dual-Model Deep Learning Web Application for Alzheimer's Detection
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.2%2B-ee4c2c.svg?logo=pytorch&logoColor=white)](https://pytorch.org/)
@@ -32,8 +32,8 @@
 
 <br/><br/>
 
-### 2. Grad-CAM Brain Region Attention Heatmaps
-<img src="assets/screenshots/gradcam_heatmaps.jpg" alt="Grad-CAM Visual Explainability" width="850px" style="border-radius: 10px; border: 1px solid #334155;" />
+### 2. Grad-CAM Visual Attention Heatmaps
+<img src="assets/screenshots/gradcam_heatmaps.jpg" alt="Grad-CAM Visual Heatmaps" width="850px" style="border-radius: 10px; border: 1px solid #334155;" />
 
 </div>
 
@@ -43,7 +43,7 @@
 
 * **🧠 Dual-Model Architecture**: Simultaneous inference across **ResNet-50** (25.6M params) and **VGG-16** (134.3M params) trained on 4 Alzheimer's stages.
 * **🎯 Weighted Ensemble**: Combines outputs using validation-F1 weights with dynamic **agreement detection** and disagreement warnings.
-* **🔬 Grad-CAM Explainability (XAI)**: Visualizes exact brain areas (e.g., ventricular dilation, hippocampal atrophy) influencing model decisions.
+* **🔬 Grad-CAM Attention Heatmaps**: Overlays visual heatmaps onto the MRI slice to highlight the brain regions the models focus on.
 * **🛡️ Temperature Calibrated**: Softmax probabilities scaled with validation-learned temperatures to deliver realistic confidence scores.
 * **🔒 Privacy-First**: 100% in-memory processing — no uploaded scans are stored on disk or sent externally.
 * **⚡ Modern Tech Stack**: High-speed **FastAPI** backend + responsive dark-mode **React 18 & Tailwind CSS** frontend.
@@ -170,7 +170,7 @@ If this project helps you, sparks an idea, or saves you development time, show y
 [![Followers](https://img.shields.io/github/followers/afrojkhan6033?label=Follow%20Me&style=social)](https://github.com/afrojkhan6033)
 
 *Machine Learning & Full-Stack Developer*  
-*Independently implemented, trained, and integrated the ResNet-50 & VGG-16 neural pipelines, Grad-CAM interpretability engine, FastAPI backend, and React clinical interface.*
+*Independently implemented, trained, and integrated the ResNet-50 & VGG-16 neural pipelines, Grad-CAM visual heatmaps, FastAPI backend, and React web interface.*
 
 </div>
 
