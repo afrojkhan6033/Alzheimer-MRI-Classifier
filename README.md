@@ -17,7 +17,7 @@
   <strong>An end-to-end medical computer vision platform featuring custom-trained ResNet-50 and VGG-16 architectures, temperature-calibrated ensemble inference, Grad-CAM visual interpretability, and a modern reactive clinical web application.</strong>
 </p>
 
-[Key Features](#-key-features) • [Application Preview](#-application-showcase) • [System Architecture](#-system-architecture) • [Models & Training](#-model-architecture--training-pipeline) • [Evaluation & Results](#-experimental-results--evaluation) • [Getting Started](#-installation--quick-start) • [Author](#-developer--author)
+[Key Features](#-key-features) • [Application Preview](#-application-showcase) • [System Architecture](#-system-architecture) • [Models & Training](#-model-architecture--training-pipeline) • [Dataset & Preprocessing](#-dataset--preprocessing-pipeline) • [Getting Started](#-installation--quick-start) • [Author](#-developer--author)
 
 </div>
 
@@ -179,75 +179,6 @@ Optimized via L-BFGS-B to minimize Negative Log-Likelihood (NLL):
 * **VGG-16**: $T = 0.3575$ (NLL: $0.1876 \to 0.0194$)
 
 Saved to [`runs/calibration.json`](runs/calibration.json) and loaded at server initialization.
-
----
-
-## 📊 Experimental Results & Evaluation
-
-All metrics reported below were computed on the strictly held-out test partition (**956 unseen MRI slices**) across 1,000 stratified bootstrap iterations (95% Confidence Intervals).
-
-### Overall Model Performance Comparison
-
-| Metric | ResNet-50 (Afroj Khan) | VGG-16 (Afroj Khan) | Weighted Ensemble |
-|---|---|---|---|
-| **Test Accuracy** | **98.22%** | **99.16%** | **99.37%** |
-| **Balanced Accuracy** | **98.68%** [97.97% – 99.30%] | **99.11%** [98.34% – 99.69%] | **99.41%** |
-| **Macro F1-Score** | **98.79%** [98.16% – 99.36%] | **99.30%** [98.73% – 99.75%] | **99.48%** |
-| **ROC-AUC (Macro OvR)** | **0.9960** | **0.9972** | **0.9984** |
-| **Ordinal MAE** | 0.0188 stages | **0.0094 stages** | **0.0084 stages** |
-| **Severe Errors ($\ge 2$ stages)** | 0.10% (1 image) | 0.10% (1 image) | **0.00% (0 images)** |
-| **Model Size / Checkpoint** | **25.6M params (~90 MB)** | 134.3M params (~512 MB) | — |
-
----
-
-### Per-Class Detailed Breakdown (Held-Out Test Set)
-
-<div align="center">
-
-#### ResNet-50 Performance Breakdown ($n = 956$)
-
-| Stage Class | Support ($n$) | Precision | Recall (95% CI) | F1-Score |
-|---|---|---|---|---|
-| **Non Demented** | 478 | 97.34% | 99.37% [98.54% – 100.0%] | 98.34% |
-| **Very Mild Demented** | 334 | 99.07% | 96.11% [93.71% – 97.90%] | 97.57% |
-| **Mild Demented** | 134 | 99.25% | 99.25% [97.76% – 100.0%] | 99.25% |
-| **Moderate Demented** | 10 | 100.0% | 100.0% [100.0% – 100.0%] | 100.0% |
-
-#### VGG-16 Performance Breakdown ($n = 956$)
-
-| Stage Class | Support ($n$) | Precision | Recall (95% CI) | F1-Score |
-|---|---|---|---|---|
-| **Non Demented** | 478 | 99.17% | 99.58% [98.74% – 100.0%] | 99.37% |
-| **Very Mild Demented** | 334 | 98.81% | 99.10% [97.90% – 100.0%] | 98.95% |
-| **Mild Demented** | 134 | 100.0% | 97.76% [94.78% – 100.0%] | 98.87% |
-| **Moderate Demented** | 10 | 100.0% | 100.0% [100.0% – 100.0%] | 100.0% |
-
-</div>
-
----
-
-### Confusion Matrices & Training Convergence
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><b>ResNet-50 Confusion Matrix</b></td>
-      <td align="center"><b>VGG-16 Confusion Matrix</b></td>
-    </tr>
-    <tr>
-      <td><img src="assets/metrics/resnet50_cm.png" width="450px" alt="ResNet50 Confusion Matrix" /></td>
-      <td><img src="assets/metrics/vgg16_cm.png" width="450px" alt="VGG16 Confusion Matrix" /></td>
-    </tr>
-    <tr>
-      <td align="center"><b>ResNet-50 Training Curves</b></td>
-      <td align="center"><b>VGG-16 Training Curves</b></td>
-    </tr>
-    <tr>
-      <td><img src="assets/metrics/resnet50_curves.png" width="450px" alt="ResNet50 Learning Curves" /></td>
-      <td><img src="assets/metrics/vgg16_curves.png" width="450px" alt="VGG16 Learning Curves" /></td>
-    </tr>
-  </table>
-</div>
 
 ---
 
